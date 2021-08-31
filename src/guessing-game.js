@@ -13,16 +13,16 @@ class GuessingGame {
     }
 
     guess() {
-        this.middle = Math.ceil ((this.min + this.max) / 2);
-        return this.arr[this.middle];
+        this.mid = Math.ceil ((this.min + this.max) / 2);
+        return this.arr[this.mid];
     }
 
     lower() {
-        return this.max = this.middle;
+        return this.max = this.mid;
     }
 
     greater() {
-        return this.min = this.middle;
+        return this.min = this.mid;
     }
 }
 
